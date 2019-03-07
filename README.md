@@ -94,25 +94,25 @@ APIMATICCalculatorV1Client client = new APIMATICCalculatorV1Client();
 
 ## <a name="list_of_controllers"></a>List of Controllers
 
-* [SimpleCalculator](#simple_calculator)
+* [CalculatorEPs](#calculator_e_ps)
 
-## <a name="simple_calculator"></a>![Class: ](https://apidocs.io/img/class.png "io.apimatic.examples.controllers.SimpleCalculator") SimpleCalculator
+## <a name="calculator_e_ps"></a>![Class: ](https://apidocs.io/img/class.png "io.apimatic.examples.controllers.CalculatorEPs") CalculatorEPs
 
 ### Get singleton instance
 
-The singleton instance of the ``` SimpleCalculator ``` class can be accessed from the API Client.
+The singleton instance of the ``` CalculatorEPs ``` class can be accessed from the API Client.
 
 ```java
-SimpleCalculator simpleCalculator = client.getSimpleCalculator();
+CalculatorEPs calculatorEPs = client.getCalculatorEPs();
 ```
 
-### <a name="calculate1_async"></a>![Method: ](https://apidocs.io/img/method.png "io.apimatic.examples.controllers.SimpleCalculator.calculate1Async") calculate1Async
+### <a name="calculate_async"></a>![Method: ](https://apidocs.io/img/method.png "io.apimatic.examples.controllers.CalculatorEPs.calculateAsync") calculateAsync
 
 > Calculates the expression using the specified operation..
 
 
 ```java
-void calculate1Async(
+void calculateAsync(
         final OperationType operation,
         final double x,
         final double y,
@@ -135,7 +135,7 @@ OperationType operation = OperationType.fromString("MULTIPLY");
 double x = 4;
 double y = 5;
 // Invoking the API call with sample inputs
-simpleCalculator.calculate1Async(operation, x, y, new APICallBack<Double>() {
+calculatorEPs.calculateAsync(operation, x, y, new APICallBack<Double>() {
     public void onSuccess(HttpContext context, Double response) {
         // TODO success callback handler
     }

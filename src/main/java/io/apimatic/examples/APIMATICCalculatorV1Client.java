@@ -10,11 +10,11 @@ import io.apimatic.examples.http.client.HttpClient;
 
 public class APIMATICCalculatorV1Client {
     /**
-     * Singleton access to SimpleCalculator controller
-     * @return	Returns the SimpleCalculator instance 
+     * Singleton access to CalculatorEPs controller
+     * @return	Returns the CalculatorEPs instance 
      */
-    public SimpleCalculator getSimpleCalculator() {
-        return SimpleCalculator.getInstance();
+    public CalculatorEPs getCalculatorEPs() {
+        return CalculatorEPs.getInstance();
     }
 
     /**
