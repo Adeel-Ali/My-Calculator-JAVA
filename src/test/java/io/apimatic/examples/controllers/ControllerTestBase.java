@@ -1,5 +1,5 @@
 /*
- * APIMATICCalculatorLib
+ * APIMATICCalculatorV1Lib
  *
  * This file was automatically generated for testing by APIMATIC v2.0 ( https://apimatic.io ).
  */
@@ -10,7 +10,7 @@ import org.junit.Before;
 import org.junit.Rule;
 import org.junit.rules.Timeout;
 
-import io.apimatic.examples.APIMATICCalculatorClient;
+import io.apimatic.examples.APIMATICCalculatorV1Client;
 import io.apimatic.examples.testing.HttpCallBackCatcher;
 
 /**
@@ -56,18 +56,18 @@ public class ControllerTestBase {
     }
     
     // Singleton instance of client for all test classes
-    private static APIMATICCalculatorClient client;
+    private static APIMATICCalculatorV1Client client;
     private static final Object clientSync = new Object();
     
     /**
      * Get client instance
      * @return
      */
-    protected static APIMATICCalculatorClient getClient() {
+    protected static APIMATICCalculatorV1Client getClient() {
         if (client == null) {
             synchronized (clientSync) {
                 if (client == null) {
-                    client = new APIMATICCalculatorClient();
+                    client = new APIMATICCalculatorV1Client();
                 }
             }
         }

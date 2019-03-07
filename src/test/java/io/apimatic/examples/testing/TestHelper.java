@@ -1,5 +1,5 @@
 /*
- * APIMATICCalculatorLib
+ * APIMATICCalculatorV1Lib
  *
  * This file was automatically generated for testing by APIMATIC v2.0 ( https://apimatic.io ).
  */

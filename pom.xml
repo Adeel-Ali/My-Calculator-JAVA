@@ -1,5 +1,5 @@
 <!--
- - APIMATICCalculatorLib
+ - APIMATICCalculatorV1Lib
  -
  - This file was automatically generated for testing by APIMATIC v2.0 ( https://apimatic.io ).
 -->
@@ -7,12 +7,12 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>APIMATICCalculatorLib</groupId>
-  <artifactId>apimaticcalculator-lib</artifactId>
+  <groupId>APIMATICCalculatorV1Lib</groupId>
+  <artifactId>apimaticcalculator-v1-lib</artifactId>
   <version>1.0.0</version>
   <packaging>jar</packaging>
 
-  <name>APIMATICCalculatorLib</name>
+  <name>APIMATICCalculatorV1Lib</name>
 
   <build>
     <pluginManagement>

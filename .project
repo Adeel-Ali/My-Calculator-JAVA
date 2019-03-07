@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
- - APIMATICCalculatorLib
+ - APIMATICCalculatorV1Lib
  -
  - This file was automatically generated for testing by APIMATIC v2.0 ( https://apimatic.io ).
 -->
 <projectDescription>
-    <name>APIMATICCalculatorLib</name>
+    <name>APIMATICCalculatorV1Lib</name>
     <comment></comment>
     <projects>
     </projects>

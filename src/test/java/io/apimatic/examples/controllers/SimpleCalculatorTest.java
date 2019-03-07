@@ -1,5 +1,5 @@
 /*
- * APIMATICCalculatorLib
+ * APIMATICCalculatorV1Lib
  *
  * This file was automatically generated for testing by APIMATIC v2.0 ( https://apimatic.io ).
  */
@@ -62,7 +62,7 @@ public class SimpleCalculatorTest extends ControllerTestBase {
         double result = 0;
         controller.setHttpCallBack(httpResponse);
         try {
-            result = controller.calculate(operation, x, y);
+            result = controller.calculate1(operation, x, y);
         } catch(APIException e) {};
 
        // Test whether the response is null
@@ -95,7 +95,7 @@ public class SimpleCalculatorTest extends ControllerTestBase {
         double result = 0;
         controller.setHttpCallBack(httpResponse);
         try {
-            result = controller.calculate(operation, x, y);
+            result = controller.calculate1(operation, x, y);
         } catch(APIException e) {};
 
        // Test whether the response is null
@@ -128,7 +128,7 @@ public class SimpleCalculatorTest extends ControllerTestBase {
         double result = 0;
         controller.setHttpCallBack(httpResponse);
         try {
-            result = controller.calculate(operation, x, y);
+            result = controller.calculate1(operation, x, y);
         } catch(APIException e) {};
 
        // Test whether the response is null

@@ -1,5 +1,5 @@
 /*
- * APIMATICCalculatorLib
+ * APIMATICCalculatorV1Lib
  *
  * This file was automatically generated for testing by APIMATIC v2.0 ( https://apimatic.io ).
  */
@@ -41,32 +41,32 @@ public class SimpleCalculator extends BaseController {
     }
 
     /**
-     * Calculates the expression using the specified operation.
+     * Calculates the expression using the specified operation..
      * @param    operation    Required parameter: The operator to apply on the variables
      * @param    x    Required parameter: The LHS value
      * @param    y    Required parameter: The RHS value
      * @return    Returns the Double response from the API call 
      */
-    public Double calculate(
+    public Double calculate1(
                 final OperationType operation,
                 final double x,
                 final double y
     ) throws Throwable {
         APICallBackCatcher<Double> callback = new APICallBackCatcher<Double>();
-        calculateAsync(operation, x, y, callback);
+        calculate1Async(operation, x, y, callback);
         if(!callback.isSuccess())
             throw callback.getError();
         return callback.getResult();
     }
 
     /**
-     * Calculates the expression using the specified operation.
+     * Calculates the expression using the specified operation..
      * @param    operation    Required parameter: The operator to apply on the variables
      * @param    x    Required parameter: The LHS value
      * @param    y    Required parameter: The RHS value
      * @return    Returns the void response from the API call 
      */
-    public void calculateAsync(
+    public void calculate1Async(
                 final OperationType operation,
                 final double x,
                 final double y,
