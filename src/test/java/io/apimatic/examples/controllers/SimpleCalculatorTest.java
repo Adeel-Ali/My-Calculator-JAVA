@@ -48,6 +48,39 @@ public class SimpleCalculatorTest extends ControllerTestBase {
     }
 
     /**
+     * Todo Add description for test testSum
+     * @throws Throwable
+     */
+    @Test
+    public void testSum() throws Throwable {
+        // Parameters for the API call
+        OperationType operation = OperationType.fromString("SUM");
+        double x = 5d;
+        double y = 20d;
+
+        // Set callback and perform API call
+        double result = 0;
+        controller.setHttpCallBack(httpResponse);
+        try {
+            result = controller.calculate(operation, x, y);
+        } catch(APIException e) {};
+
+       // Test whether the response is null
+        assertNotNull("Response is null", 
+                httpResponse.getResponse());
+        // Test response code
+        assertEquals("Status is not 200", 
+                200, httpResponse.getResponse().getStatusCode());
+
+        // Test whether the captured response is as we expected
+        assertNotNull("Result does not exist", 
+                result);
+ 
+        assertEquals("Response does not match expected value", 
+            25, result, ASSERT_PRECISION);
+    }
+
+    /**
      * Todo Add description for test testSubtract
      * @throws Throwable
      */
@@ -111,39 +144,6 @@ public class SimpleCalculatorTest extends ControllerTestBase {
  
         assertEquals("Response does not match expected value", 
             5, result, ASSERT_PRECISION);
-    }
-
-    /**
-     * Todo Add description for test testSum
-     * @throws Throwable
-     */
-    @Test
-    public void testSum() throws Throwable {
-        // Parameters for the API call
-        OperationType operation = OperationType.fromString("SUM");
-        double x = 5d;
-        double y = 20d;
-
-        // Set callback and perform API call
-        double result = 0;
-        controller.setHttpCallBack(httpResponse);
-        try {
-            result = controller.calculate(operation, x, y);
-        } catch(APIException e) {};
-
-       // Test whether the response is null
-        assertNotNull("Response is null", 
-                httpResponse.getResponse());
-        // Test response code
-        assertEquals("Status is not 200", 
-                200, httpResponse.getResponse().getStatusCode());
-
-        // Test whether the captured response is as we expected
-        assertNotNull("Result does not exist", 
-                result);
- 
-        assertEquals("Response does not match expected value", 
-            25, result, ASSERT_PRECISION);
     }
 
 }

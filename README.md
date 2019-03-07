@@ -131,8 +131,8 @@ void calculateAsync(
 #### Example Usage
 
 ```java
-OperationType operation = OperationType.fromString("SUBTRACT");
-double x = 20;
+OperationType operation = OperationType.fromString("MULTIPLY");
+double x = 4;
 double y = 5;
 // Invoking the API call with sample inputs
 simpleCalculator.calculateAsync(operation, x, y, new APICallBack<Double>() {
